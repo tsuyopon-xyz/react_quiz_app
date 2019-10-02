@@ -1,5 +1,4 @@
 import QuizFetcher from '../../../src/DataFetchers/QuizFetcher';
-import { exportAllDeclaration } from '@babel/types';
 
 describe('src/DataFetchers/QuizFetcherのテスト', () => {
   describe('fetchクラスメソッド', () => {
