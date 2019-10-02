@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import he from 'he';
 import QuizFetcher from '../data_fetchers/QuizFetcher';
 
 class Quiz {
@@ -24,9 +25,9 @@ class Quiz {
 
     return quizDataList.results.map(result => {
       return {
-        question: result.question,
-        correctAnswer: result.correct_answer,
-        incorrectAnswers: [...result.incorrect_answers]
+        question: he.decode(result.question),
+        correctAnswer: he.decode(result.correct_answer),
+        incorrectAnswers: result.incorrect_answers.map(str => he.decode(str))
       };
     })
     .map(quizData => {

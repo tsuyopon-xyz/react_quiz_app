@@ -48,4 +48,6 @@
         - Babelの設定など
             - import, exportをテスト実行時にも有効にするために必要
     - [expect](https://jestjs.io/docs/ja/expect)
-        - アサーション
+        - アサーションメソッド
+- クイズデータに含まれる特殊文字を人間が読みやすい形式に変換してくれる機能が含まれているライブラリ
+    - [he](https://github.com/mathiasbynens/he)
