@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import QuizFetcher from '../DataFetchers/QuizFetcher';
+import QuizFetcher from '../data_fetchers/QuizFetcher';
 
 class Quiz {
   constructor({ question, correctAnswer, incorrectAnswers }) {

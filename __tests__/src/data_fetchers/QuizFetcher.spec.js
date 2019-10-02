@@ -1,6 +1,6 @@
-import QuizFetcher from '../../../src/DataFetchers/QuizFetcher';
+import QuizFetcher from '../../../src/data_fetchers/QuizFetcher';
 
-describe('src/DataFetchers/QuizFetcherのテスト', () => {
+describe('src/data_fetchers/QuizFetcherのテスト', () => {
   describe('fetchクラスメソッド', () => {
     it('10件のクイズデータが手に入る', async () => {
       const data = await QuizFetcher.fetch();
