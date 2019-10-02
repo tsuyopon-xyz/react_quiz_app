@@ -43,3 +43,9 @@
         - [【React Router】history, location, matchを理解する](https://tsuyopon.xyz/learning-contents/web-dev/javascript/react/history-location-match-in-react-router/)
 - プルリクエスト(`git flow` の開発スタイルで機能毎にブランチを分けて実装を進める際に参考になるページ)
     - https://github.com/tsuyopon-xyz/api_server_with_mock_db/pulls?q=is%3Apr+is%3Aclosed
+- Jest
+    - [Getting Started](https://jestjs.io/docs/ja/getting-started)
+        - Babelの設定など
+            - import, exportをテスト実行時にも有効にするために必要
+    - [expect](https://jestjs.io/docs/ja/expect)
+        - アサーション
