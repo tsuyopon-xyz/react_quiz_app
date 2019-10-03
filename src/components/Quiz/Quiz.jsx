@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import QuizModel from '../../models/Quiz';
+import './Quiz.css';
 
 class Quiz extends React.Component {
   constructor(props) {
@@ -82,7 +83,10 @@ class Quiz extends React.Component {
     const quiz = quizzes[currentIndex];
     const answers = quiz.shuffleAnswers().map((answer, index) => {
       return (
-        <li key={index} onClick={() => { this.selectAnswer(quiz, answer) }}>
+        <li
+          className="QuizAnswer"
+          key={index}
+          onClick={() => { this.selectAnswer(quiz, answer) }}>
           {answer}
         </li>
       );
@@ -93,7 +97,7 @@ class Quiz extends React.Component {
         <h1>クイズページ</h1>
         <div className="container">
           <p>{quiz.question}</p>
-          <ul>{answers}</ul>
+          <ul className="QuizList">{answers}</ul>
         </div>
         <hr/>
         <Link to="/">トップページへ</Link>
