@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import QuizModel from '../../models/Quiz';
+import Button from '../Button/Button';
 import './Quiz.css';
 
 class Quiz extends React.Component {
@@ -83,11 +84,12 @@ class Quiz extends React.Component {
     const quiz = quizzes[currentIndex];
     const answers = quiz.shuffleAnswers().map((answer, index) => {
       return (
-        <li
-          className="QuizButton"
-          key={index}
-          onClick={() => { this.selectAnswer(quiz, answer) }}>
-          {answer}
+        <li key={index}>
+          <Button
+            onClickHandler={() => { this.selectAnswer(quiz, answer) }}
+          >
+            {answer}
+          </Button>
         </li>
       );
     });
@@ -113,11 +115,11 @@ class Quiz extends React.Component {
         <h1>クイズページ</h1>
         <div className="container">
           <p id="result">{`${numberOfCorrects}/${quizzes.length} corrects.`}</p>
-          <div
-            className="QuizButton"
-            onClick={() => {this.restart()}}>
-              Restart
-          </div>
+          <Button
+            onClickHandler={() => {this.restart()}}
+          >
+            Restart
+          </Button>
         </div>
         <hr/>
         <Link to="/">トップページへ</Link>

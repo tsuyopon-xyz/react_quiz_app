@@ -1,11 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 
-const Home = () => {
+const Home = ({history}) => {
   return (
     <div>
       <h1>ホーム</h1>
-      <Link to="/quiz">クイズページへ移動</Link>
+      <Button
+        onClickHandler={() => {
+          history.push('/quiz');
+        }}
+      >
+        クイズページへ移動
+      </Button>
     </div>
   );
 };
