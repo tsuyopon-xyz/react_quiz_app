@@ -84,7 +84,7 @@ class Quiz extends React.Component {
     const answers = quiz.shuffleAnswers().map((answer, index) => {
       return (
         <li
-          className="QuizAnswer"
+          className="QuizButton"
           key={index}
           onClick={() => { this.selectAnswer(quiz, answer) }}>
           {answer}
@@ -113,7 +113,11 @@ class Quiz extends React.Component {
         <h1>クイズページ</h1>
         <div className="container">
           <p id="result">{`${numberOfCorrects}/${quizzes.length} corrects.`}</p>
-          <button onClick={() => {this.restart()}}>Restart</button>
+          <div
+            className="QuizButton"
+            onClick={() => {this.restart()}}>
+              Restart
+          </div>
         </div>
         <hr/>
         <Link to="/">トップページへ</Link>
