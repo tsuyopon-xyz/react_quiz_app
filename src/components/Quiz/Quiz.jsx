@@ -38,7 +38,7 @@ class Quiz extends React.Component {
       numberOfCorrects++;
       alert('Correct answer!!');
     } else {
-      alert(`Wrong answer... (The correct answer is "${quiz._correctAnswer}")`);
+      alert(`Wrong answer... (The correct answer is "${quiz.correctAnswer}")`);
     }
     currentIndex++;
 
@@ -97,7 +97,7 @@ class Quiz extends React.Component {
     return (
       <div>
         <h1>クイズページ</h1>
-        <div className="container">
+        <div>
           <p>{quiz.question}</p>
           <ul className="QuizList">{answers}</ul>
         </div>
@@ -113,7 +113,7 @@ class Quiz extends React.Component {
     return (
       <div>
         <h1>クイズページ</h1>
-        <div className="container">
+        <div>
           <p id="result">{`${numberOfCorrects}/${quizzes.length} corrects.`}</p>
           <Button
             onClickHandler={() => {this.restart()}}
