@@ -1,6 +1,6 @@
 # レポジトリ内容
 
-この課題は、Web白熱教室のReact課題その6「[【エクササイズ】2画面を持つクイズアプリをReactで実装する](https://tsuyopon.xyz/learning-contents/web-dev/javascript/react/js-exercise-for-react-router-1/)」の課題レポジトリになります。
+この課題は、Web白熱教室のReact Router課題その1「[【エクササイズ】React Routerを使ったクイズアプリを作る](https://tsuyopon.xyz/learning-contents/web-dev/javascript/react/js-exercise-for-react-router-1/)」の課題レポジトリになります。
 
 ## 課題
 
@@ -27,6 +27,9 @@
         - models/Quiz.js
             - クイズデータを使った処理の責務を持つ
 - [ ] トップページ用のコンポーネントと、クイズページ用のコンポーネントを作成して、React Routerを使ってルーティング設定をする
+    - HashRouterを使って実装するようにする
+        - 最終的には、実装したクイズアプリをGitHub Pagesを使って公開するため
+            - ポートフォリオの1つにできる
 - [ ] クイズページ用のコンポーネントで、次の機能を実装する
     - クイズの読み込み機能
     - クイズの出題&解答一覧を表示する機能
@@ -62,6 +65,8 @@
         - [【React Router】HashRouterを使ってルーティングを設定する](https://tsuyopon.xyz/learning-contents/web-dev/javascript/react/routing-with-hash-router-and-route-in-react-router/)
         - [【React Router】Redirectで別ページにリダイレクトさせる](https://tsuyopon.xyz/learning-contents/web-dev/javascript/react/how-to-redirect-with-react-router/)
         - [【React Router】history, location, matchを理解する](https://tsuyopon.xyz/learning-contents/web-dev/javascript/react/history-location-match-in-react-router/)
+    - その他
+        - [テストコード入門の内容](https://tsuyopon.xyz/learning-contents/web-dev/javascript/backend/#i-2)
 - プルリクエスト(`git flow` の開発スタイルで機能毎にブランチを分けて実装を進める際に参考になるページ)
     - https://github.com/tsuyopon-xyz/api_server_with_mock_db/pulls?q=is%3Apr+is%3Aclosed
 - Jest
