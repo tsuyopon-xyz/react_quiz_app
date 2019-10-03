@@ -6,14 +6,35 @@
 
 - 以下の完成形の画像と同じ見た目になるように実装する
 - 具体的な実装の流れは、以下の「課題をクリアするためのステップ」の内容を参考にすること
+- answerブランチでサンプルコード(解答コード)を用意しているが、あくまでもサンプルコードという立ち位置で、サンプルコードと全く同じ構成・実装である必要は無い
 
 ## 完成形
 
-後ほど記述
+![](exercise_images/exercise_for_react_router_completion.gif)
 
 ### 課題をクリアするためのステップ(実装のヒント)
 
-後ほど記述
+- [ ] Reactの開発環境を用意
+    - create-react-appを使う場合は`npx create-react-app .` で現在のディレクトリにReactの開発環境を用意できる
+- [ ] 開発しやすいように不要なファイルは一度削除する
+    - 参考記事: [【React】JSXの概要を理解する&必要最小限の環境に修正する](https://tsuyopon.xyz/learning-contents/web-dev/javascript/react/what-is-the-jsx-and-modify-env/)
+- [ ] クイズデータの取得やクイズデータの操作を扱いやすくするモジュール(クラス)を実装する
+    - `mocha`や `jest` といったテストツールを使って、動作をテストしながら実装することをオススメする
+        - answerブランチに用意したサンプルコードでは `jest` を使った
+    - answerブランチに実装したサンプルコードでは次の2つのモジュールを用意した
+        - data_fetchers/QuizFetcher.js
+            - クイズデータの取得の責務を持つ
+        - models/Quiz.js
+            - クイズデータを使った処理の責務を持つ
+- [ ] トップページ用のコンポーネントと、クイズページ用のコンポーネントを作成して、React Routerを使ってルーティング設定をする
+- [ ] クイズページ用のコンポーネントで、次の機能を実装する
+    - クイズの読み込み機能
+    - クイズの出題&解答一覧を表示する機能
+    - 選択した解答の正解・不正解を判定する機能
+    - クイズ結果を表示する機能
+- [ ] 各ページのスタイル(デザイン)を整える
+- [ ] 必要に応じて、全ページで共通化できるパーツをコンポーネント化する
+    - answerブランチのサンプルコードではButtonコンポーネントを用意した
 
 
 ## 実装→レビュー依頼の流れ
@@ -43,3 +64,11 @@
         - [【React Router】history, location, matchを理解する](https://tsuyopon.xyz/learning-contents/web-dev/javascript/react/history-location-match-in-react-router/)
 - プルリクエスト(`git flow` の開発スタイルで機能毎にブランチを分けて実装を進める際に参考になるページ)
     - https://github.com/tsuyopon-xyz/api_server_with_mock_db/pulls?q=is%3Apr+is%3Aclosed
+- Jest
+    - [Getting Started](https://jestjs.io/docs/ja/getting-started)
+        - Babelの設定など
+            - import, exportをテスト実行時にも有効にするために必要
+    - [expect](https://jestjs.io/docs/ja/expect)
+        - アサーションメソッド
+- クイズデータに含まれる特殊文字を人間が読みやすい形式に変換してくれる機能が含まれているライブラリ
+    - [he](https://github.com/mathiasbynens/he)
