@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react_quiz_app/static/css/main.b331cf76.chunk.css",
+    "main.js": "/react_quiz_app/static/js/main.d11843b6.chunk.js",
+    "main.js.map": "/react_quiz_app/static/js/main.d11843b6.chunk.js.map",
+    "runtime-main.js": "/react_quiz_app/static/js/runtime-main.51b8f535.js",
+    "runtime-main.js.map": "/react_quiz_app/static/js/runtime-main.51b8f535.js.map",
+    "static/js/2.0021209e.chunk.js": "/react_quiz_app/static/js/2.0021209e.chunk.js",
+    "static/js/2.0021209e.chunk.js.map": "/react_quiz_app/static/js/2.0021209e.chunk.js.map",
+    "index.html": "/react_quiz_app/index.html",
+    "precache-manifest.b6529081163a63eb3b5fa97d24443ba0.js": "/react_quiz_app/precache-manifest.b6529081163a63eb3b5fa97d24443ba0.js",
+    "service-worker.js": "/react_quiz_app/service-worker.js",
+    "static/css/main.b331cf76.chunk.css.map": "/react_quiz_app/static/css/main.b331cf76.chunk.css.map"
+  }
+}
